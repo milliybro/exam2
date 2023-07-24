@@ -1,0 +1,15 @@
+@use "../utils/functions"as func;
+@use "../utils/placeholders";
+
+.container {
+  max-width: func.container(1920, 310);
+  @extend %container;
+}
+.container-bro{
+  max-width: calc(1920px - 1150px - 40px);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @extend %container;
+}

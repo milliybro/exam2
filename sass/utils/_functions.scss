@@ -1,0 +1,3 @@
+@function container($width, $padding, $mobilePadding: 20) {
+  @return $width - 2 * $padding + 2 * $mobilePadding + px;
+}

@@ -1,0 +1,24 @@
+@use "../base/_typography.scss";
+@use "../global";
+@use "../layout/container";
+@use "../layout/header";
+@use "../layout/footer";
+@use "../themes/backtop";
+@use "../themes/loading";
+@use "../utils/variables" as var;
+
+.about {
+  img {
+    // width: 100%;
+  }
+  p {
+    color: #242424;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.8px;
+    opacity: 0.8;
+  }
+}

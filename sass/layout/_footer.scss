@@ -1,0 +1,140 @@
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+
+#subs {
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  .subs {
+    position: absolute;
+    top: -193px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: var.$primary-color;
+    box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+    padding: 64px 252px;
+    @media (max-width: 1200px) {
+      padding: 50px;
+    }
+    h5 {
+      color: var(--ffffff, #fff);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-family: "Cera Round Pro", sans-serif;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%; /* 29.9px */
+      letter-spacing: 0.92px;
+      text-transform: capitalize;
+    }
+    h3 {
+      color: #fff;
+      text-align: center;
+      font-variant-numeric: lining-nums tabular-nums;
+      font-family: "Cera Round Pro", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 62.4px */
+      letter-spacing: 1.44px;
+      text-transform: capitalize;
+      padding-bottom: 40px;
+    }
+    .subs__input {
+      padding-top: 64px;
+      input {
+        width: 100%;
+        border-radius: 100px;
+        border: 1px solid rgba(245, 239, 219, 0.5);
+        color: var.$aaa;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: "Cera Round Pro", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 175%; /* 28px */
+        letter-spacing: 0.64px;
+        text-transform: capitalize;
+        padding: 12px 19px;
+        margin-right: 32px;
+        background-color: transparent;
+      }
+      button {
+        color: #fff;
+        font-family: "Cera Round Pro", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 175%; /* 28px */
+        letter-spacing: 0.64px;
+        border-radius: 100px;
+        border: 1px solid #fff;
+        padding: 12px 32px;
+        background-color: transparent;
+      }
+    }
+  }
+}
+footer {
+  padding-top: 292px;
+  padding-bottom: 40px;
+  background-color: var.$primary-color !important;
+  h4 {
+    color: #fff;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Cera Round Pro", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 41.6px */
+    letter-spacing: 1.28px;
+    text-transform: capitalize;
+  }
+  h5 {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.64px;
+  }
+  img {
+    width: 50%;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.64px;
+    padding-top: 32px;
+    padding-bottom: 45px;
+  }
+}
+.foot {
+  padding-top: 80px;
+  h3 {
+    color: #fff;
+    text-align: center;
+
+    /* Body 16px Regular */
+    font-family: "Open Sans" sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+    letter-spacing: 0.64px;
+  }
+}
